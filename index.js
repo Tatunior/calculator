@@ -7,5 +7,12 @@ function clearDisplay(){
     display.value = "";
 }
 function calculate(){
-    display.value = eval(display.value);
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error";
+
+    }
 }
+    
